@@ -5,14 +5,15 @@ metadata:
   labels:
     app: web
 spec:
+  selector:
+    app: web
+    tier: frontend
   ports:
     - nodePort: 31000
       port: 81
       targetPort: 80
-  selector:
-    app: web
-    tier: frontend
-
+  
+---
     
 apiVersion: v1
 kind: PersistentVolumeClaim

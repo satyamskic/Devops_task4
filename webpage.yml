@@ -8,6 +8,7 @@ spec:
   selector:
     app: web
     tier: frontend
+  type: NodePort
   ports:
     - nodePort: 31000
       port: 81
